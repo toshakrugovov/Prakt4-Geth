@@ -1,0 +1,23 @@
+
+
+0xAcf9D89da1e5aeB7b6e3e275bB8Ee6E8b9c074aa - первый аккаунт (пароль - 1234)
+0xae3d617fB065CFA0af7DA0B49A7F87626Bd2A094 - второй аккаунт (пароль - 1234)
+0x2a006E7A392F69177084c3e93922884f704b4DD9 - третий аккаунт (пароль - 1234)
+0x92499Cb557DE55eEf5b3A11f423d12EA1F2639D6 - четвёртый аккаунт (пароль-1234)
+0x8642C6C1f30c503a8aB5f0e25a6D9CFD2f887cee - пятый аккаунт (пароль - 1234)
+0x293a97bE07d7b6E2b9eF3d350437104549f208A2 - шестой аккаунт (пароль-всв)
+0xD38e4003D1ea0Ac98f54f630D979dc92773dFdAf - cедьмой аккаунт (пароль - 4856106AntonKrugovov)
+Введите пароль: Password12345567889
+Ваш аккаунт: 0x8F1d67859597FA5304089dA95CB5eC34031aE724
+
+Введите пароль: LubluMpt1234511!
+Ваш аккаунт: 0x58D86758C34ad47fbdcB4f02013C492004D9A719
+
+geth account new --datadir data - создание нового аккаунта
+geth init --datadir data genesis.json - создание генезис блока
+
+geth --datadir data --networkid 24112006 --unlock 0xAcf9D89da1e5aeB7b6e3e275bB8Ee6E8b9c074aa --allow-insecure-unlock --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net,miner --miner.etherbase 0xAcf9D89da1e5aeB7b6e3e275bB8Ee6E8b9c074aa - запуск чатсной сети блокчейна
+geth attach --datadir data ipc:\\.\pipe\geth.ipc - создание отдельной консоли geth для того, чтобы управлять процессами в блокчейне
+    eth.blockNumber - номер блока
+
+    
